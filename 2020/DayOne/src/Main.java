@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        List<Integer> values = Files.readAllLines(Paths.get("./src/input.txt")).stream().map(Integer::parseInt).collect(Collectors.toList());
+        List<Integer> values = Files.readAllLines(Paths.get("./2020/DayOne/src/input.txt")).stream().map(Integer::parseInt).collect(Collectors.toList());
         System.out.println(partOne(values));
         System.out.println(partTwo(values));
     }
